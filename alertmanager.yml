@@ -13,8 +13,18 @@ route:
 
   receiver: 'default-receiver' # Destinataire par défaut
 
+  routes:
+    - match:
+        action: 'cleanup'
+      receiver: 'disk-cleanup-webhook'
+      continue: true # Permet d'envoyer AUSSI
+
+
 receivers:
   - name: 'default-receiver'
     email_configs:
       - to: 'votre-nom@proton.me'
         send_resolved: true # Notifie aussi quand l'alerte est terminée (Vert)
+  - name: 'disk-cleanup-webhook'
+    webhook_configs:
+      - url: 'http://grafana:32197/hooks/cleanup-disk'

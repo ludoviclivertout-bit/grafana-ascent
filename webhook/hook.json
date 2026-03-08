@@ -1,0 +1,8 @@
+[
+  {
+    "id": "cleanup-disk",
+    "execute-command": "/usr/local/bin/clean_disk.sh",
+    "command-working-directory": "/tmp",
+    "response-message": "Nettoyage du disque lancé..."
+  }
+]
