@@ -5,9 +5,7 @@
 sudo dnf -y --refresh update
 sudo dnf upgrade
 getenforce
-sudo vi /etc/selinux/config  # set SELINUX=disabled 
-sud reboot
-getenforce  # check
+sudo vi /etc/selinux/config  # set SELINUX=disabled
 #sudo timedatectl set-timezone Etc/UTC
 sudo dnf -y install yum-utils git wget curl epel-release
 sudo dnf install -y htop iotop iftop
