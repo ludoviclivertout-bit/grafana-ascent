@@ -25,7 +25,6 @@ def simulate_temp():
         (temp_value, datetime.now())
     )
     conn.commit()
-
 ```
 
 ## Configuration du Panel Gauge (Le visuel)
