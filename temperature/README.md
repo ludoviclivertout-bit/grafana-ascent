@@ -37,6 +37,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable grafana-temp
 sudo systemctl start grafana-temp
 sudo systemctl status grafana-temp
+...
 
 ## Configuration du Panel Gauge (Le visuel)
 ```sql
