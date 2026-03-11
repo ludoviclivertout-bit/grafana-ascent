@@ -28,8 +28,8 @@ def simulate_temp():
 
 ```
 
-##Création de service:
-
+## Create service
+```shell
 cd grafana-ascent/temperature/
 chmod +x run_simulation.sh
 sudo cp grafana-temp.service /etc/systemd/system
