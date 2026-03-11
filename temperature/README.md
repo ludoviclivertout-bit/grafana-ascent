@@ -26,6 +26,16 @@ def simulate_temp():
     )
     conn.commit()
 ```
+## Create service
+```shell
+cd grafana-ascent/temperature/
+chmod +x run_simulation.sh
+sudo cp grafana-temp.service /etc/systemd/system
+sudo systemctl daemon-reload
+sudo systemctl enable grafana-temp
+sudo systemctl start grafana-temp
+sudo systemctl status grafana-temp
+...
 
 ## Configuration du Panel Gauge (Le visuel)
 ```sql
